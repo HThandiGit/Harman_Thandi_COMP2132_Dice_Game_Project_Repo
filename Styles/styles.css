@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-image: url("../Images/Tabletop.jpg");
+}
+
+#button-container {
+  float: right;
+}
+/*# sourceMappingURL=styles.css.map */
