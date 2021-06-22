@@ -8,18 +8,50 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <h1>Welcome to the dice game!</h1>
 
-    <div id = "dice-container">
-        <div id = "die_one"></div>
-        <div id = "die_two"></div>
-        <div id = "die_three"></div>
-        <div id = "die_four"></div>
+    <p class = "dice-name"><u>Player Dice</u></p>
+    <div class = "dice-container">
+        <div id = "die_one">
+            <img src = "Images/dice_face_1.png" height="125" width="125">
+        </div>
+        <div id = "die_two">
+            <img src = "Images/dice_face_2.png" height="125" width="125">
+        </div>
+    </div>
+    
+    <div id = "score-info"><u><b>Information on Scoring:</b></u>
+    
+        <ul>
+            <li><b>Rolling a one on either die grants a score of 0</b></li>
+            <li><b>Rolling 2 0f the same number gives you the sum * 2</b></li>
+            <li><b>All other combinations give a score equaling the sum of the dice</b></li>
+        </ul>
     </div>
 
     <div id = "button-container">
-        <button type = "button">roll!</button>
-        <button type = "button">rules</button>
+        <button type = "button" id= "roll-button">ROLL!</button>
+        <button type = "button">Reset</button>
     </div>
+
+    <p class = "dice-name"><u>Computer Dice</u></p>
+    <div class = "dice-container">
+        <div id = "die_three">
+            <img src = "Images/dice_face_3.png" height="125" width="125">
+        </div>
+        <div id = "die_four">
+            <img src = "Images/dice_face_4.png" height="125" width="125">
+        </div>
+    </div>
+    
+    <div id = "score-tracking"> <b><u>Current Score</u></b><br><br>
+        
+        
+            <b>Player score: 0</b><br><br>
+            <b>Comp score: 0</b><br><br>
+            <b>Total Score: 0</b>
+        
+    </div>
+    <footer>blah</footer>
 </body>
 </html>
