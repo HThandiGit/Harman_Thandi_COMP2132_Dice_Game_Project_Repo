@@ -1,13 +1,69 @@
-h1 {
+h1, footer {
   text-align: center;
+  background-color: red;
+  border: 2px solid black;
 }
 
-body{
+.dice-name{
 
+  margin: 5px;
+  text-align: center;
+  font-size:xx-large;
+  font-weight: bold;
+  color:lightblue
+}
+body {
   background-image: url("../Images/Tabletop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#button-container{
+.dice-container{
 
-  float:right;
+  display: flex;
+  padding: 5px;
+  margin: auto;
+  width: auto;
+  height: auto;
+  justify-content: center;
+}
+
+#score-info{
+  width: 200px;
+  height: 250px;
+  margin-left:200px;
+  background-color: white;
+  border: 5px solid black;
+}
+
+#score-tracking{
+
+  position:relative;
+  width: 150px;
+  height: 150px;
+  left: 1000px;
+  bottom: 400px;
+  background-color: white;
+  border: 5px solid black;
+}
+
+img{
+
+  margin: 3px;
+  border: black solid 5px;
+}
+#button-container {
+
+  position: relative;
+  top: -100px;
+  display: flex;
+  justify-content: center;
+}
+
+button{
+
+  margin: 3px;
 }

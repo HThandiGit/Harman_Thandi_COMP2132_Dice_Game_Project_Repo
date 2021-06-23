@@ -12,11 +12,11 @@
 
     <p class = "dice-name"><u>Player Dice</u></p>
     <div class = "dice-container">
-        <div id = "die_one">
-            <img src = "Images/dice_face_1.png" height="125" width="125">
+        <div>
+            <img src = "Images/dice_face_1.png" height="125" width="125" id = "die_one">
         </div>
-        <div id = "die_two">
-            <img src = "Images/dice_face_2.png" height="125" width="125">
+        <div>
+            <img src = "Images/dice_face_2.png" height="125" width="125" id = "die_two">
         </div>
     </div>
     
@@ -31,16 +31,16 @@
 
     <div id = "button-container">
         <button type = "button" id= "roll-button">ROLL!</button>
-        <button type = "button">Reset</button>
+        <button type= "reset" id = "reset-button">Reset</button>
     </div>
 
     <p class = "dice-name"><u>Computer Dice</u></p>
     <div class = "dice-container">
-        <div id = "die_three">
-            <img src = "Images/dice_face_3.png" height="125" width="125">
+        <div>
+            <img src = "Images/dice_face_3.png" height="125" width="125" id = "die_three">
         </div>
-        <div id = "die_four">
-            <img src = "Images/dice_face_4.png" height="125" width="125">
+        <div>
+            <img src = "Images/dice_face_4.png" height="125" width="125" id = "die_four">
         </div>
     </div>
     
@@ -53,5 +53,7 @@
         
     </div>
     <footer>blah</footer>
+    <script src = "Scripts/Dice.js"></script>
+    <script src = "Scripts/Game_Script.js"></script>
 </body>
 </html>
