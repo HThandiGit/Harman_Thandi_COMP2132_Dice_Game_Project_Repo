@@ -1,7 +1,19 @@
+
+@mixin borderStyle{
+
+  border: 5px solid black;
+}
 h1, footer {
   text-align: center;
   background-color: red;
-  border: 2px solid black;
+  @include borderStyle();
+}
+
+#heading img{
+
+  margin-right: 10px;
+  margin-top: 10px;
+  position: relative;
 }
 
 .dice-name{
@@ -24,8 +36,8 @@ body {
 .dice-container{
 
   display: flex;
-  padding: 5px;
-  margin: auto;
+  padding: 10px;
+  margin: 5px;
   width: auto;
   height: auto;
   justify-content: center;
@@ -36,24 +48,24 @@ body {
   height: 250px;
   margin-left:200px;
   background-color: white;
-  border: 5px solid black;
+  @include borderStyle();
 }
 
 #score-tracking{
 
   position:relative;
   width: 150px;
-  height: 150px;
+  height: 250px;
   left: 1000px;
-  bottom: 400px;
+  bottom: 480px;
   background-color: white;
-  border: 5px solid black;
+  @include borderStyle();
 }
 
 img{
 
   margin: 3px;
-  border: black solid 5px;
+  @include borderStyle();
 }
 #button-container {
 

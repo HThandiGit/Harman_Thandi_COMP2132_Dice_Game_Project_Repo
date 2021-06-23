@@ -1,4 +1,8 @@
+// the dice class
+
 class Dice{
+
+    // a pair of 6 sided dice will have 2 values per roll
 
     constructor(firstDieValue, secondDieValue){
 
@@ -6,26 +10,36 @@ class Dice{
         this.secondDieValue = secondDieValue;
     }
 
+    // random value between 1 and 6 per die
+
     rollDice(){
 
         this.firstDieValue = Math.floor((Math.random() * 6) + 1);
         this.secondDieValue = Math.floor((Math.random() * 6) + 1);
     }
 
+    // get the first die value
+
     getFirstDieVal(){
 
         return this.firstDieValue;
     }
+
+    // get the second die value
 
     getSecondDieVal(){
 
         return this.secondDieValue;
     }
 
+    // get the sum of th dice
+
     getDiceSum(){
 
         return (this.firstDieValue + this.secondDieValue);
     }
+
+    // record the score according to the given criteria
 
     calcScore(){
 
